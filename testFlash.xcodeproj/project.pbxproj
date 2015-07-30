@@ -7,13 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A7AB766E3AF27BBFBB895B7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6187C1300828A03AB977E800 /* libPods.a */; };
+		84D91A7E1B5FAC1600AD2636 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84D91A7D1B5FAC1600AD2636 /* UIImage+OpenCV.mm */; };
+		84D91A811B5FB39D00AD2636 /* OpenCVHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84D91A7F1B5FB39D00AD2636 /* OpenCVHelper.cpp */; };
 		84D9C4711B5BFD7B00CB7272 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D9C4701B5BFD7B00CB7272 /* main.m */; };
 		84D9C4741B5BFD7B00CB7272 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D9C4731B5BFD7B00CB7272 /* AppDelegate.m */; };
-		84D9C4771B5BFD7B00CB7272 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D9C4761B5BFD7B00CB7272 /* ViewController.m */; };
+		84D9C4771B5BFD7B00CB7272 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84D9C4761B5BFD7B00CB7272 /* ViewController.mm */; };
 		84D9C47A1B5BFD7B00CB7272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D9C4781B5BFD7B00CB7272 /* Main.storyboard */; };
 		84D9C47C1B5BFD7B00CB7272 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D9C47B1B5BFD7B00CB7272 /* Images.xcassets */; };
 		84D9C47F1B5BFD7B00CB7272 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D9C47D1B5BFD7B00CB7272 /* LaunchScreen.xib */; };
 		84D9C48B1B5BFD7B00CB7272 /* testFlashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D9C48A1B5BFD7B00CB7272 /* testFlashTests.m */; };
+		84D9C4951B5BFD9900CB7272 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D9C4941B5BFD9900CB7272 /* AVFoundation.framework */; };
+		84DCBE9D1B5F7B2900E2805F /* VideoSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84DCBE9C1B5F7B2900E2805F /* VideoSource.mm */; };
+		84DD96D01B67A5D900769882 /* MorseAssistant.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84DD96CF1B67A5D900769882 /* MorseAssistant.mm */; };
+		84E2B8121B62874200E888E9 /* aimRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E2B8101B62874200E888E9 /* aimRed.png */; };
+		84E2B8131B62874200E888E9 /* aimGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E2B8111B62874200E888E9 /* aimGreen.png */; };
+		84E333831B63F1AB002DBB87 /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E333771B63F1AB002DBB87 /* FMDatabase+InMemoryOnDiskIO.m */; };
+		84E333841B63F1AB002DBB87 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E333791B63F1AB002DBB87 /* FMDatabase.m */; };
+		84E333851B63F1AB002DBB87 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E3337B1B63F1AB002DBB87 /* FMDatabaseAdditions.m */; };
+		84E333861B63F1AB002DBB87 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E3337D1B63F1AB002DBB87 /* FMDatabasePool.m */; };
+		84E333871B63F1AB002DBB87 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E3337F1B63F1AB002DBB87 /* FMDatabaseQueue.m */; };
+		84E333881B63F1AB002DBB87 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E333821B63F1AB002DBB87 /* FMResultSet.m */; };
+		84E3338B1B63F20C002DBB87 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E3338A1B63F20C002DBB87 /* libsqlite3.dylib */; };
+		84E333901B63F291002DBB87 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E3338F1B63F291002DBB87 /* DBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +43,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F2F0F813C20FE63ACC82A06 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6187C1300828A03AB977E800 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D91A7C1B5FAC1600AD2636 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		84D91A7D1B5FAC1600AD2636 /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		84D91A7F1B5FB39D00AD2636 /* OpenCVHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenCVHelper.cpp; sourceTree = "<group>"; };
+		84D91A801B5FB39D00AD2636 /* OpenCVHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVHelper.h; sourceTree = "<group>"; };
 		84D9C46B1B5BFD7B00CB7272 /* testFlash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testFlash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D9C46F1B5BFD7B00CB7272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D9C4701B5BFD7B00CB7272 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84D9C4721B5BFD7B00CB7272 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84D9C4731B5BFD7B00CB7272 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		84D9C4751B5BFD7B00CB7272 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84D9C4761B5BFD7B00CB7272 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84D9C4761B5BFD7B00CB7272 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		84D9C4791B5BFD7B00CB7272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84D9C47B1B5BFD7B00CB7272 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84D9C47E1B5BFD7B00CB7272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		84D9C4841B5BFD7B00CB7272 /* testFlashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testFlashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D9C4891B5BFD7B00CB7272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D9C48A1B5BFD7B00CB7272 /* testFlashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testFlashTests.m; sourceTree = "<group>"; };
+		84D9C4941B5BFD9900CB7272 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		84DCBE9A1B5F748100E2805F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		84DCBE9B1B5F7B2900E2805F /* VideoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoSource.h; sourceTree = "<group>"; };
+		84DCBE9C1B5F7B2900E2805F /* VideoSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoSource.mm; sourceTree = "<group>"; };
+		84DCBE9F1B5F7BFD00E2805F /* VideoFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoFrame.h; sourceTree = "<group>"; };
+		84DD96CE1B67A5D900769882 /* MorseAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MorseAssistant.h; sourceTree = "<group>"; };
+		84DD96CF1B67A5D900769882 /* MorseAssistant.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MorseAssistant.mm; sourceTree = "<group>"; };
+		84E2B8101B62874200E888E9 /* aimRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aimRed.png; sourceTree = "<group>"; };
+		84E2B8111B62874200E888E9 /* aimGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aimGreen.png; sourceTree = "<group>"; };
+		84E333761B63F1AB002DBB87 /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		84E333771B63F1AB002DBB87 /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
+		84E333781B63F1AB002DBB87 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		84E333791B63F1AB002DBB87 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		84E3337A1B63F1AB002DBB87 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		84E3337B1B63F1AB002DBB87 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		84E3337C1B63F1AB002DBB87 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		84E3337D1B63F1AB002DBB87 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		84E3337E1B63F1AB002DBB87 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		84E3337F1B63F1AB002DBB87 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		84E333801B63F1AB002DBB87 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		84E333811B63F1AB002DBB87 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		84E333821B63F1AB002DBB87 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		84E3338A1B63F20C002DBB87 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		84E3338E1B63F291002DBB87 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		84E3338F1B63F291002DBB87 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		FDEF18CFBE6BDC2F58F1878D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E3338B1B63F20C002DBB87 /* libsqlite3.dylib in Frameworks */,
+				84D9C4951B5BFD9900CB7272 /* AVFoundation.framework in Frameworks */,
+				0A7AB766E3AF27BBFBB895B7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +111,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30FCF4759CD38FC1E93B124D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84E3338A1B63F20C002DBB87 /* libsqlite3.dylib */,
+				6187C1300828A03AB977E800 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84D9C4621B5BFD7B00CB7272 = {
 			isa = PBXGroup;
 			children = (
+				84D9C4941B5BFD9900CB7272 /* AVFoundation.framework */,
 				84D9C46D1B5BFD7B00CB7272 /* testFlash */,
 				84D9C4871B5BFD7B00CB7272 /* testFlashTests */,
 				84D9C46C1B5BFD7B00CB7272 /* Products */,
+				EC364A5302C8AAC5727AE3F3 /* Pods */,
+				30FCF4759CD38FC1E93B124D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +144,11 @@
 		84D9C46D1B5BFD7B00CB7272 /* testFlash */ = {
 			isa = PBXGroup;
 			children = (
+				84E27EC91B6A097A0033F760 /* Morse Translation folders */,
 				84D9C4721B5BFD7B00CB7272 /* AppDelegate.h */,
 				84D9C4731B5BFD7B00CB7272 /* AppDelegate.m */,
 				84D9C4751B5BFD7B00CB7272 /* ViewController.h */,
-				84D9C4761B5BFD7B00CB7272 /* ViewController.m */,
+				84D9C4761B5BFD7B00CB7272 /* ViewController.mm */,
 				84D9C4781B5BFD7B00CB7272 /* Main.storyboard */,
 				84D9C47B1B5BFD7B00CB7272 /* Images.xcassets */,
 				84D9C47D1B5BFD7B00CB7272 /* LaunchScreen.xib */,
@@ -98,6 +162,7 @@
 			children = (
 				84D9C46F1B5BFD7B00CB7272 /* Info.plist */,
 				84D9C4701B5BFD7B00CB7272 /* main.m */,
+				84DCBE9A1B5F748100E2805F /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +184,88 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		84DCBE9E1B5F7B3500E2805F /* VideoSource */ = {
+			isa = PBXGroup;
+			children = (
+				84E2B8101B62874200E888E9 /* aimRed.png */,
+				84E2B8111B62874200E888E9 /* aimGreen.png */,
+				84DCBE9B1B5F7B2900E2805F /* VideoSource.h */,
+				84DCBE9C1B5F7B2900E2805F /* VideoSource.mm */,
+				84DCBE9F1B5F7BFD00E2805F /* VideoFrame.h */,
+				84E3338D1B63F269002DBB87 /* OpenCV */,
+			);
+			name = VideoSource;
+			sourceTree = "<group>";
+		};
+		84E27EC81B6A09540033F760 /* Morse assistant */ = {
+			isa = PBXGroup;
+			children = (
+				84DD96CE1B67A5D900769882 /* MorseAssistant.h */,
+				84DD96CF1B67A5D900769882 /* MorseAssistant.mm */,
+			);
+			name = "Morse assistant";
+			sourceTree = "<group>";
+		};
+		84E27EC91B6A097A0033F760 /* Morse Translation folders */ = {
+			isa = PBXGroup;
+			children = (
+				84E27EC81B6A09540033F760 /* Morse assistant */,
+				84E333911B63F29B002DBB87 /* DBManager */,
+				84DCBE9E1B5F7B3500E2805F /* VideoSource */,
+			);
+			name = "Morse Translation folders";
+			sourceTree = "<group>";
+		};
+		84E333891B63F1B4002DBB87 /* FMDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				84E333761B63F1AB002DBB87 /* FMDatabase+InMemoryOnDiskIO.h */,
+				84E333771B63F1AB002DBB87 /* FMDatabase+InMemoryOnDiskIO.m */,
+				84E333781B63F1AB002DBB87 /* FMDatabase.h */,
+				84E333791B63F1AB002DBB87 /* FMDatabase.m */,
+				84E3337A1B63F1AB002DBB87 /* FMDatabaseAdditions.h */,
+				84E3337B1B63F1AB002DBB87 /* FMDatabaseAdditions.m */,
+				84E3337C1B63F1AB002DBB87 /* FMDatabasePool.h */,
+				84E3337D1B63F1AB002DBB87 /* FMDatabasePool.m */,
+				84E3337E1B63F1AB002DBB87 /* FMDatabaseQueue.h */,
+				84E3337F1B63F1AB002DBB87 /* FMDatabaseQueue.m */,
+				84E333801B63F1AB002DBB87 /* FMDB.h */,
+				84E333811B63F1AB002DBB87 /* FMResultSet.h */,
+				84E333821B63F1AB002DBB87 /* FMResultSet.m */,
+			);
+			name = FMDatabase;
+			sourceTree = "<group>";
+		};
+		84E3338D1B63F269002DBB87 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				84D91A7C1B5FAC1600AD2636 /* UIImage+OpenCV.h */,
+				84D91A7D1B5FAC1600AD2636 /* UIImage+OpenCV.mm */,
+				84D91A801B5FB39D00AD2636 /* OpenCVHelper.h */,
+				84D91A7F1B5FB39D00AD2636 /* OpenCVHelper.cpp */,
+			);
+			name = OpenCV;
+			sourceTree = "<group>";
+		};
+		84E333911B63F29B002DBB87 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				84E333891B63F1B4002DBB87 /* FMDatabase */,
+				84E3338E1B63F291002DBB87 /* DBManager.h */,
+				84E3338F1B63F291002DBB87 /* DBManager.m */,
+			);
+			name = DBManager;
+			sourceTree = "<group>";
+		};
+		EC364A5302C8AAC5727AE3F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDEF18CFBE6BDC2F58F1878D /* Pods.debug.xcconfig */,
+				2F2F0F813C20FE63ACC82A06 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D9C48E1B5BFD7B00CB7272 /* Build configuration list for PBXNativeTarget "testFlash" */;
 			buildPhases = (
+				73FF1F380DA54DE76E0400E2 /* Check Pods Manifest.lock */,
 				84D9C4671B5BFD7B00CB7272 /* Sources */,
 				84D9C4681B5BFD7B00CB7272 /* Frameworks */,
 				84D9C4691B5BFD7B00CB7272 /* Resources */,
+				0D38E5D1D2432379D1C1236E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,9 +348,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E2B8131B62874200E888E9 /* aimGreen.png in Resources */,
 				84D9C47A1B5BFD7B00CB7272 /* Main.storyboard in Resources */,
 				84D9C47F1B5BFD7B00CB7272 /* LaunchScreen.xib in Resources */,
 				84D9C47C1B5BFD7B00CB7272 /* Images.xcassets in Resources */,
+				84E2B8121B62874200E888E9 /* aimRed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,14 +365,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D38E5D1D2432379D1C1236E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73FF1F380DA54DE76E0400E2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84D9C4671B5BFD7B00CB7272 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84D9C4771B5BFD7B00CB7272 /* ViewController.m in Sources */,
+				84D91A811B5FB39D00AD2636 /* OpenCVHelper.cpp in Sources */,
+				84D9C4771B5BFD7B00CB7272 /* ViewController.mm in Sources */,
+				84D91A7E1B5FAC1600AD2636 /* UIImage+OpenCV.mm in Sources */,
+				84E333841B63F1AB002DBB87 /* FMDatabase.m in Sources */,
+				84E333831B63F1AB002DBB87 /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
+				84E333871B63F1AB002DBB87 /* FMDatabaseQueue.m in Sources */,
+				84E333881B63F1AB002DBB87 /* FMResultSet.m in Sources */,
+				84E333901B63F291002DBB87 /* DBManager.m in Sources */,
+				84E333861B63F1AB002DBB87 /* FMDatabasePool.m in Sources */,
 				84D9C4741B5BFD7B00CB7272 /* AppDelegate.m in Sources */,
+				84DCBE9D1B5F7B2900E2805F /* VideoSource.mm in Sources */,
+				84DD96D01B67A5D900769882 /* MorseAssistant.mm in Sources */,
 				84D9C4711B5BFD7B00CB7272 /* main.m in Sources */,
+				84E333851B63F1AB002DBB87 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +542,7 @@
 		};
 		84D9C48F1B5BFD7B00CB7272 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDEF18CFBE6BDC2F58F1878D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = testFlash/Info.plist;
@@ -357,6 +553,7 @@
 		};
 		84D9C4901B5BFD7B00CB7272 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F2F0F813C20FE63ACC82A06 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = testFlash/Info.plist;
@@ -418,6 +615,7 @@
 				84D9C4901B5BFD7B00CB7272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84D9C4911B5BFD7B00CB7272 /* Build configuration list for PBXNativeTarget "testFlashTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +624,7 @@
 				84D9C4931B5BFD7B00CB7272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

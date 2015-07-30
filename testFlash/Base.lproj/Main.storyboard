@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +16,88 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ad-ap-spH">
+                                <rect key="frame" x="16" y="83" width="568" height="30"/>
+                                <state key="normal" title="Begin transmission">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="beginTransmission:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BuH-6M-bbl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHY-Nf-zkm">
+                                <rect key="frame" x="536" y="121" width="48" height="30"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="0.12149175030000001" blue="0.070812092110000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b86-Dm-iRU"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q7j-3U-7ha">
+                                <rect key="frame" x="16" y="45" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="LLD-aq-uE4"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5v-rw-Cuu">
+                                <rect key="frame" x="16" y="570" width="568" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOs-EV-P8i">
+                                <rect key="frame" x="247" y="121" width="108" height="30"/>
+                                <state key="normal" title="Begin decoding">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="beginDecoding:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dx1-Gs-8Uk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cte-OM-BBt">
+                                <rect key="frame" x="16" y="121" width="37" height="30"/>
+                                <color key="backgroundColor" red="0.29065750219999997" green="0.17514709179999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="PW8-6f-63c"/>
+                                </constraints>
+                                <state key="normal" title="En">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeExpectedLang:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bd0-UY-Qzc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="w5v-rw-Cuu" secondAttribute="bottom" constant="8" id="6dS-kX-GBk"/>
+                            <constraint firstItem="0ad-ap-spH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8Yj-JM-LeG"/>
+                            <constraint firstItem="cte-OM-BBt" firstAttribute="top" secondItem="0ad-ap-spH" secondAttribute="bottom" constant="8" id="ByF-bP-Sit"/>
+                            <constraint firstItem="yHY-Nf-zkm" firstAttribute="top" secondItem="0ad-ap-spH" secondAttribute="bottom" constant="8" id="G5c-Wl-Lie"/>
+                            <constraint firstItem="Q7j-3U-7ha" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="IAR-AW-mEz"/>
+                            <constraint firstAttribute="centerX" secondItem="zOs-EV-P8i" secondAttribute="centerX" constant="-0.5" id="Ngd-od-bCV"/>
+                            <constraint firstItem="zOs-EV-P8i" firstAttribute="top" secondItem="0ad-ap-spH" secondAttribute="bottom" constant="8" id="Tcs-pe-8Ef"/>
+                            <constraint firstItem="0ad-ap-spH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bih-2f-QdH"/>
+                            <constraint firstItem="Q7j-3U-7ha" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dSo-ag-zPh"/>
+                            <constraint firstItem="w5v-rw-Cuu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="duU-Hq-z3u"/>
+                            <constraint firstItem="w5v-rw-Cuu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="pAn-xq-BnP"/>
+                            <constraint firstItem="cte-OM-BBt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qhU-ek-Qju"/>
+                            <constraint firstItem="Q7j-3U-7ha" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="tmJ-hB-bzz"/>
+                            <constraint firstItem="yHY-Nf-zkm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vxy-So-8gm"/>
+                            <constraint firstItem="0ad-ap-spH" firstAttribute="top" secondItem="Q7j-3U-7ha" secondAttribute="bottom" constant="8" id="vyV-co-8bC"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnExpectedLang" destination="cte-OM-BBt" id="suq-WB-zMZ"/>
+                        <outlet property="lblMorseCode" destination="w5v-rw-Cuu" id="5UV-99-f8m"/>
+                        <outlet property="txtFUserInput" destination="Q7j-3U-7ha" id="icY-Ie-spQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

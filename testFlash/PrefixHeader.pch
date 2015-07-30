@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  testFlash
+//
+//  Created by Admin on 22.07.15.
+//  Copyright (c) 2015 daleijn. All rights reserved.
+//
+
+#ifndef testFlash_PrefixHeader_pch
+#define testFlash_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define kUSE_TRACKING_HELPER    1
+
+#ifdef __OBJC__
+#ifdef __cplusplus
+#include <opencv2/opencv.hpp>
+#endif
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#endif
