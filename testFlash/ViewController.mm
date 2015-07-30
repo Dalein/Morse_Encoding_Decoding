@@ -66,8 +66,8 @@
     
     
     //Camera debug view
-    NSUInteger iImageVDebugImgSize = self.view.frame.size.width/2.5;
-    imageVDebug = [[UIImageView alloc] initWithFrame:CGRectMake(10, iImageVDebugImgSize, 150, 150)];
+    NSUInteger iImageV_YPos = self.view.frame.size.width/2;
+    imageVDebug = [[UIImageView alloc] initWithFrame:CGRectMake(10, iImageV_YPos, 120, 120)];
     imageVDebug.transform = transorm;
     imageVDebug.contentMode = UIViewContentModeScaleAspectFit;
     [self.view addSubview:imageVDebug];
