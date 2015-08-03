@@ -16,7 +16,7 @@ This delegate method -(void)UIUpdate; will be helpful, in this method you can ge
 live stream from camera and debug view, determine is flashing now or not, and get current morse transcript 
 Example:
 
--(void)UIUpdate {
+- (void)UIUpdate {
 
    NSLog(@"FlashValue: %f", myMorseAssistant.m_detector->getFlashValue());
     
