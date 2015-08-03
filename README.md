@@ -4,7 +4,7 @@ For decoding was used augmented reality library OpenCV 2
 
 All what you need to do:
 * Copy "Morse Translation folders" to your project
-* Add protocol declaration `<MorseAssistantDelegate>`
+* Conform your class to the protocol `<MorseAssistantDelegate>`
 * Init Morse assistant:
    ` MorseAssistant * myMorseAssistant = [MorseAssistant initMorse];`
     `myMorseAssistant.delegate = self;`
